@@ -1,0 +1,43 @@
+body {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+
+p {
+  background-color: lightgreen;
+}
+
+h1 {
+  background-color: pink;
+  color: blue;
+}
+
+h2,
+p {
+  background-color: lightblue;
+}
+
+.pinkbg {
+  background-color: pink;
+}
+
+#para2 {
+  background-color: yellow;
+}
+
+p::first-line {
+  background-color: lime;
+}
+p::first-letter {
+  background-color: purple;
+}
+
+footer p {
+  background-color: lightgreen;
+}
+a:hover {
+  background-color: lightgoldenrodyellow;
+}
