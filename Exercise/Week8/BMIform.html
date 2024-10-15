@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculate</title>
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            border: 2px solid cadetblue;
+            padding: 1rem;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        input[type='submit'] {
+            margin-top: 1rem;
+            width: 55%;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <form action="myBMI.php" method="POST">
+        <div>
+            <label for="name">Enter Name:</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div>
+            <label for="age">ENter Age:</label>
+            <input type="number" name="age" id="age" required>
+        </div>
+
+        <div>
+            <label for='weight'>Enter Weight:</label>
+            <input type='number' name='weight' id='weight' required>
+        </div>
+
+        <div>
+            <label for='height'>Enter Height:</label>
+            <input type='number' name='height' id='height' required>
+        </div>
+
+        <input type='submit' value='Calculate'>
+    </form> 
+</body>
+</html>
