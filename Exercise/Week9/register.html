@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memeber Registeration</title>
+</head>
+<body>
+    <form action="register.php" method="POST">
+        <div class="name">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required> 
+        </div>
+        <div class="address">
+            <label for="address">Address</label>
+            <textarea name="address" id="address"></textarea>
+        </div>
+        <div class="nrc">
+            <input type="radio" name="nrc" id="has-nrc" value="1">
+            <label for="has-nrc">Resisdent</label>
+            <input type="radio" name="nrc" id="non-nrc" value="0">
+            <label for="non-nrc">Non-resisdent</label>
+        </div>
+        <input type="submit" value="Submit" name="submit">
+    </form>
+</body>
+</html>
