@@ -88,7 +88,7 @@
         else if (empty($firstname)) $errmsg .= "You must enter your first name\n";
 
         // Last Name
-        if (!preg_match("^[A-Za-z]+(-[A-Za-z]+)*$", $lastname)) $errmsg .= "Only alpha letters or a hyphen allowed in your last name\n";
+        if (!preg_match("/^[A-Za-z]+(-[A-Za-z]+)*$/", $lastname)) $errmsg .= "Only alpha letters or a hyphen allowed in your last name\n";
         else if (empty($lastname)) $errmsg .= "You must enter your last name\n";
 
         // Age
