@@ -98,7 +98,7 @@
 
         if ($errmsg != "") {
             echo "<p>Error: $errmsg</p>";
-            echo "<p>Return to the <a href='bookingform.html'>form</a></p>";
+            echo "<p>Return to the <a href='register.html'>form</a></p>";
             die();
         }
         else {
