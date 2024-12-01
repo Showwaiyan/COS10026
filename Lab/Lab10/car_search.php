@@ -30,12 +30,14 @@
                     . "<th scope=\"col\">Make</th>\n"
                     . "<th scope=\"col\">Model</th>\n"
                     . "<th scope=\"col\">Price</th>\n"
+                    ." <th scope=\"col\">YOM</th>\n"
                     . "</tr>\n";
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<tr>\n";
                     echo "<td>", $row["make"], "</td>\n";
                     echo "<td>", $row["model"], "</td>\n";
                     echo "<td>", $row["price"], "</td>\n";
+                    echo "<td>", $row["yom"], "</td>\n";
                     echo "</tr>\n";
                 }
                 echo "</table>\n";
